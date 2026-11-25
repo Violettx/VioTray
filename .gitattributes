@@ -1,0 +1,13 @@
+* text=auto
+
+# PowerShell 脚本保持 CRLF，且不要动 BOM（PS 5.1 读中文依赖 BOM）
+*.ps1 text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制
+*.exe binary
+*.dll binary
+*.png binary
+*.ico binary
+*.zip binary

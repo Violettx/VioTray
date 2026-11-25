@@ -1,0 +1,24 @@
+# 构建产物
+bin/
+obj/
+*.user
+*.suo
+
+# 本地 NuGet 缓存与 CLI 临时目录
+.nuget-packages/
+.dotnet-home/
+
+# 日志
+*.log
+
+# 工作区私有数据
+.workbuddy/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+
+# 系统
+Thumbs.db
+desktop.ini
