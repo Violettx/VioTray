@@ -16,15 +16,25 @@ USB 二合一 WiFi + 蓝牙网卡在过热或供电波动时会掉线，重连�
 ## 系统要求
 
 - Windows 10 1809 或更高（需要 WinRT 的 `NetworkOperatorTetheringManager`）
-- [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
+- 下载自包含版则无需额外运行时；精简版需要 [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0)
 
 ## 安装
 
-1. 从 [Releases](../../releases) 下载 `VioTray.exe`
-2. 放到任意目录，双击运行
-3. 托盘右键可勾选「开机启动」
+从 [Releases](../../releases) 下载，两个文件按需选一个：
+
+| 文件 | 大小 | 说明 |
+|---|---|---|
+| `VioTray.exe` | 52.9 MB | 自包含，下载即用 |
+| `VioTray-runtime-required.exe` | 24.4 MB | 需先装 .NET 10 Desktop Runtime |
+
+下载后：
+
+1. 放到任意目录，双击运行
+2. 托盘右键可勾选「开机启动」
 
 配置与日志位于 `%LOCALAPPDATA%\VioTray\`。
+
+> 自包含版首次启动会解压到临时目录，可能慢 1–2 秒，之后走缓存。
 
 ## 配置
 
